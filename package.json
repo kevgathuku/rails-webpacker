@@ -1,6 +1,11 @@
 {
   "name": "rails-webpacker",
   "private": true,
+  "scripts": {
+    "build": "npm run clean && bin/webpack",
+    "clean": "rm -rf ./public/packs/*",
+    "postinstall": "npm run build"
+  },
   "dependencies": {
     "@rails/webpacker": "3.5",
     "babel-preset-react": "^6.24.1",
