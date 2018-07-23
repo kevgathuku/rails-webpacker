@@ -2,9 +2,7 @@
   "name": "rails-webpacker",
   "private": true,
   "scripts": {
-    "build": "npm run clean && bin/webpack",
-    "clean": "rm -rf ./public/packs/*",
-    "postinstall": "npm run build"
+    "postinstall": "./bin/webpack"
   },
   "dependencies": {
     "@rails/webpacker": "3.5",
